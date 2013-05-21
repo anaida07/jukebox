@@ -1,0 +1,100 @@
+"k".include? "Kathmandu"
+a = '{"value":"Highway 8 Precinct 9 Lost Creek","x":"289","y":"147"}'
+a.split(":")
+a.split(":").first
+a.split(\":\").first
+a.split("\":\"").[1]
+a.split("\":\"").split[1]
+a.split("\":\"")[1].split(',').first
+a.split("\":\"")[1].split('\",').first
+a.split("\":\"")
+a.split("\":\"").first
+a.split("\":\"")[1]
+a.split('\",\"')
+a.split('\",\"').second
+a.split('\",\"')[1]
+a.split('\",\"')[0]
+a.split('\\\",\\\"')[0]
+a.split(',')
+a.split(',').first.split(':')
+a.split(',').first.split(':')[1]
+a.split(':')[1]
+a.split(':')[1].gsub("\\\"x\\\"","")
+a.split(':')[1].gsub("s","")
+a.split(':')[1].gsub("x","")
+a.split(':')[1].gsub(',\\"',"")
+a.split(':')[1].gsub(',\"',"")
+a.split(':')[1].gsub(',\"x',"")
+a.split(':')[1].gsub(',\"x\\"',"")
+a.split(':')[1].gsub(',\\"x\\"',"")
+a.split(':')[1].split('\",\"x\""')
+a.split(':')[1].split('x')
+a
+a.split('\\"')
+a.split('\\"').first
+a.split('\"').first
+a.split('\').
+a.split('\\')[1]
+a.split('\')
+a.split('\\')
+a.split(':')
+a = "{\"value\":\"Highway 8, : x Precinct 9 Lost Creek\",\"x\":\"289\",\"y\":\"147\"}"
+a.split('"')
+a.split('"')[3]
+%q(a)
+%q(a a)
+Admin
+Admin.first
+Admin.all.first
+Users
+User
+User.create()
+User.new
+User.count
+User.first.update_attribute(:role,3)
+n
+name = 'barun'
+def abc(n)
+n.upcase!
+end
+nn = abc(name)
+name
+User.first
+User.first.update_attribute(balance: 50)
+User.first.update_attribute(:balance, 50)
+queues = Resque.queues
+queues.each do |queue_name|
+      puts "Clearing #{queue_name}..."
+      Resque.redis.del "queue:#{queue_name}"
+puts "Clearing delayed..." # in case of scheduler - doesn't break if no scheduler module is installed
+    Resque.redis.keys("delayed:*").each do |key|
+      Resque.redis.del "#{key}"
+    end
+    Resque.redis.del "delayed_queue_schedule"
+puts "Clearing stats..."
+    Resque.redis.set "stat:failed", 0 
+    Resque.redis.set "stat:processed", 0
+reload!
+AUDIO_TOOLS_CONFIG.filesystem_base_url
+[1,2,3].pop()
+[1,2,3].shift()
+[1,2,3].unshift()
+shift()
+a.shift
+[1,2,3].inject(0){|sum,val| sum += val}
+[1,2,[3,4]].flatten
+}/.flatten
+{:name => "James"
+}.flatten
+[1,nil].compact
+[1,2,3].map{|n| puts n}
+[1,2,3].inject(0){|sum,val|sum+=val}
+mkdir jukebox
+cd /
+q
+cd ~/
+load playlist.rb
+b = Playlist.new(1, "test")
+b = Playlist.new(1, "test").info
+b = Playlist.new
+exit
